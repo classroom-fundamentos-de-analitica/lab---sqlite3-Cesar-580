@@ -44,8 +44,8 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
 
-SELECT k0, avg(t2.c21) 
-FROM tbl1 t1 
-INNER JOIN tbl2 t2 ON t1.k1 = t2.k1
-WHERE t1.c13 > 400 
-GROUP BY t1.k0;
+SELECT k0, avg(c21) 
+FROM tbl1 
+INNER JOIN tbl2 ON tbl1.k1 = tbl2.k1 
+WHERE c13 > 400 
+GROUP BY k0 ORDER BY k0;
