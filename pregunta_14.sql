@@ -44,3 +44,5 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
 
+SELECT K0, AVG(c21) FROM tbl1 
+WHERE c13 > 400
